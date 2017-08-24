@@ -1,0 +1,163 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.ebanx.numberkeyboard.utils.Actions" />
+
+        <variable
+            name="keyListener"
+            type="com.ebanx.numberkeyboard.OnKeyClick" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context="com.ebanx.numberkeyboard.KeyboardFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyboardNumberOne"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('1')}"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/keyboardNumberTwo"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('2')}"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/keyboardNumberThree"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('3')}"
+                android:text="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyboardNumberFour"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('4')}"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/keyboardNumberFive"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('5')}"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/keyboardNumberSix"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('6')}"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyboardNumberSeven"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('7')}"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/keyboardNumberEight"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('8')}"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/keyboardNumberNine"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('9')}"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/keyboardErase"
+                style="@style/ButtonKeyboardWord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick(Actions.ERASE_TEXT)}"
+                android:padding="28dp"
+                android:tint="@color/colorPurple"
+                android:src="@drawable/icon_back_space" />
+
+            <Button
+                android:id="@+id/keyboardNumberZero"
+                style="@style/ButtonKeyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{(v) -> keyListener.handleClick('0')}"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/keyboardHelp"
+                style="@style/ButtonKeyboardWord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="26dp"
+                android:tint="@color/colorPurple"
+                android:src="@drawable/icon_help_keyboard" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

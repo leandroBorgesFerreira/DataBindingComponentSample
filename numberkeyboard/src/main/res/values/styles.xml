@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="ButtonKeyboard">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorErase</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="ButtonKeyboardWord">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorErase</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>
